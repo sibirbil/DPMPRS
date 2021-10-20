@@ -2,6 +2,9 @@
 
 Utku Karaca, İlker Birbil, Nurşen Aydiın and Gizem Mullaoğlu
 
+This repository accompanies [our
+paper](http://www.optimization-online.org/DB_HTML/2021/10/8640.html) "Differential privacy in multi-party resource sharing".
+
 ## Abstract
 
 This study examines a resource-sharing problem involving multiple
