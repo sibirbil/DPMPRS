@@ -44,38 +44,41 @@ Required packages: numpy, csv, gurobipy
 Required solver: Gurobi
 
 For each scenario, there will be four actions.
-	1) Two txt files will be created with names showing the dynamic parameters (can be seen below). The files include the following
-		* Optimal objective function values
-		* Data private model iteration results (in an every 10 iterations)
-		* Data private model objective function value
-		* Data private model decision variable values
-		* Differentially private model iteration results (in an every 10 iterations)
-		* Differentially private model objective function value
-		* Differentially private model decision variable values
-	2) For each scenario, a row will be added to "results.csv". The row includes the following
-		* the parameters of the scenario
-		* objective function values of 3 models
-        * primal solutions of 3 models
-			# (parties * max_product) entries for the initial model
-            # (parties * max_product) entries for the distributed model
-            # (parties * max_product) entries for the differentially private model
-        * dual solutions of 3 models
-            # (m + parties * max_private_cap) entries for the initial model
-            # parties * (m + max_private_cap) entries for the distributed model
-            # parties * (m + max_private_cap) entries for the differentially private model
-	3) For each scenario, a row will be added to both dataPrivate.csv and diffPrivate.csv. Rows include the followings
-		- dataPrivate.csv
-			* seed value
-			* \bar{s}_k values for each party
-			* best objective function value so far
-		- diffPrivate.csv
-			* seed value
-			* \bar{s}_k values for each party
-			* shared resource capacities
-			* best s_k values
-			* epsilon
-			* delta
-			* best objective function value so far
+1. Two txt files will be created with names showing the dynamic parameters (can be seen below). The files include the following:
+- Optimal objective function values
+- Data private model iteration results (in an every 10 iterations)
+- Data private model objective function value
+- Data private model decision variable values
+- Differentially private model iteration results (in an every 10 iterations)
+- Differentially private model objective function value
+- Differentially private model decision variable values
+
+2. For each scenario, a row will be added to "results.csv". The row includes the following:
+- the parameters of the scenario
+- objective function values of 3 models
+- primal solutions of 3 models
+  - (parties * max_product) entries for the initial model
+  - (parties * max_product) entries for the distributed model
+  - (parties * max_product) entries for the differentially private model
+- dual solutions of 3 models
+  - (m + parties * max_private_cap) entries for the initial model
+  - parties * (m + max_private_cap) entries for the distributed model
+  - parties * (m + max_private_cap) entries for the differentially private model
+
+3. For each scenario, a row will be added to both dataPrivate.csv and
+diffPrivate.csv. Rows include the following:
+- dataPrivate.csv
+  - seed value
+  - \bar{s}_k values for each party
+  -  best objective function value so far
+- diffPrivate.csv
+  - seed value
+  - \bar{s}_k values for each party
+  - shared resource capacities
+  - best s_k values
+  -  epsilon
+  -  delta
+  - best objective function value so far
 		
 Current dynamic parameters for the simulation in test.py
 - Number of parties (parties): 5  
