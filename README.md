@@ -1,4 +1,4 @@
-# diferentiallyPrivateDecisionMaking
+# Diferentially Private Decision Making
 This repo includes codes for our recent publication.
 
 One can run simulate.py to start the simulation study. The results will appear in the folder "results".
